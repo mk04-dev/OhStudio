@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import { useState } from "react";
+import "./App.css";
+import Body from "./pages/home/Body";
+import Header from "./pages/home/Header";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [darkTheme, setDarkTheme] = useState<boolean>(false);
+	return (
+		<div className={darkTheme ? "dark" : "lg"}>
+			<div className="relative flex flex-col items-center dark:bg-black">
+				<div
+					className="fixed top-10 right-10 w-5 h-5 float-left rounded-full cursor-pointer bg-black dark:bg-white"
+					onClick={() => setDarkTheme(!darkTheme)}
+				/>
+				<div className="max-width">
+					<Header />
+					<Body />
+				</div>
+			</div>
+		</div>
+	);
 }
 
 export default App;
