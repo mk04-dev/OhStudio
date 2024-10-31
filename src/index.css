@@ -21,34 +21,32 @@ code {
 .max-width {
   width: 1400px;
 }
-
 .header {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   height: 70vh;
-  gap: 40px;
-  width: 1400px;
   justify-content: center;
   align-items: center;
   padding: 40px;
   position: relative;
+  width: 70%;
 }
 
 .header .title {
   width: 100%;
-  max-width: 700px;
-  font-size: 72px;
   text-align: center;
   font-weight: 500;
   letter-spacing: -0.2px;
   line-height: 1.2em;
 }
-
-.h-50vh {
-  height: 50vh;
+.fz-header {
+  font-size: 72px;
+  margin-bottom: 40px;
 }
-
+.fz-header-2 {
+  font-size: 48px;
+}
 .container {
   height: auto;
   aspect-ratio: 1.309090909090909 / 1;
@@ -105,4 +103,66 @@ code {
 .container:hover .container-mark-title {
   top: 28px;
   opacity: 1;
+}
+
+@media (max-width: 1440px) {
+  .max-width {
+    width: 1280px;
+  }
+}
+@media (max-width: 1024px) {
+  .max-width {
+    width: 940px;
+  }
+  .fz-header {
+    font-size: 48px;
+  }
+  .fz-header-2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 10px;
+  }
+  .max-width {
+    width: 640px;
+  }
+  .header {
+    height: 50vh;
+  }
+  .fz-header {
+    font-size: 36px;
+  }
+  .fz-header-2 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 425px) {
+  .max-width {
+    width: 400px;
+  }
+  .fz-header {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+
+  .fz-header-2 {
+    font-size: 20px;
+  }
+  .header {
+    height: 28vh;
+    padding: 0;
+  }
+}
+@media (max-width: 375px) {
+  body {
+    font-size: 6px;
+  }
+  .fz-header {
+    font-size: 20px;
+  }
+  .max-width {
+    width: 300px;
+  }
 }

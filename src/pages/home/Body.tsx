@@ -29,8 +29,8 @@ function Body() {
 	return (
 		<>
 			<div className="header w-full dark:text-white">
-				<span className="title slideUp">A brand and product designer working with clients globally</span>
-				<div className="flex gap-2 slideUp">
+				<span className="title fz-header slideUp">A brand and product designer working with clients globally</span>
+				<div className="flex gap-2 sm:gap-1 slideUp">
 					<div className="px-2 py-1">Expertise</div>
 					<div className="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded-full">Branding</div>
 					<div className="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded-full">Product</div>
@@ -93,9 +93,9 @@ function Body() {
 				/>
 				<Container title="NYCB" type="video" src="https://framerusercontent.com/assets/NieGBlxBdgpz9QCHV5Aj89rWjVg.mp4" />
 			</div>
-			<div className="flex flex-col gap-2 justify-center items-center w-full p-10 h-50vh">
-				<span className="text-4xl font-medium slideUp dark:text-white">Let's work together</span>
-				<span className="text-4xl font-medium slideUp text-gray-400 cursor-pointer hover:text-gray-300">Get in touch</span>
+			<div className="header">
+				<span className="fz-header-2 font-medium slideUp dark:text-white">Let's work together</span>
+				<span className="fz-header-2 font-medium slideUp text-gray-400 cursor-pointer hover:text-gray-300">Get in touch</span>
 			</div>
 		</>
 	);

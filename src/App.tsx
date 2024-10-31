@@ -11,7 +11,7 @@ function App() {
 					className="fixed top-10 right-10 w-5 h-5 float-left rounded-full cursor-pointer bg-black dark:bg-white"
 					onClick={() => setDarkTheme(!darkTheme)}
 				/>
-				<div className="max-width">
+				<div className="max-width flex flex-col items-center">
 					<Header />
 					<Body />
 				</div>
